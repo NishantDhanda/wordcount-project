@@ -1,0 +1,12 @@
+<h1>Your wordcount is {{count}}</h1>
+<br/>
+<h1>Text is</h1>
+{{fulltext}}
+<br/>
+{% for i,j in words %}
+	{{i}}  :  {{j}}
+	<br/>
+{% endfor %}
+<br/>
+<br/>
+<a href="{% url 'home' %}">Count again !</a>
